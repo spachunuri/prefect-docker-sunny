@@ -1,0 +1,49 @@
+###
+### A complete description of a Prefect Deployment for flow 'Json read'
+###
+name: gitflowjsonread
+description: null
+version: ffefa107324c27b292cadad75fdd6da1
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Json read
+manifest_path: null
+storage:
+  repository: https://github.com/spachunuri/prefect-docker-sunny.git
+  reference: master
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: 0b7e61a7-43ba-4468-97c2-2cb7ba987214
+  _block_document_name: sunnypersonal
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: json_read.py:json_read
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-04-28T21:02:24.873568+00:00'

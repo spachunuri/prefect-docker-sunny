@@ -1,0 +1,15 @@
+{
+    "source_name":"simplesat",
+    "source_type":"api",
+    "url":"https://api.simplesat.io/api/answers/?page_size=1000",
+    "headers":{"Content-Type":"application/json","X-Simplesat-Token":"{{ api_key }}"},
+    "auth_basic_username":"",
+    "auth_basic_password":"",
+    "start_date_parameter_type":"iso",
+    "params":{"modified__gte":"{{ start_date }}"},
+    "pagination_next":"next",
+    "data_lookup_key":"answers",
+    "watermark_sql_template":"INSERT INTO {environment}.AIRFLOW_AUDIT.AIRFLOW_WATERMARK SELECT '{dag_name}', '{task_name}', '{run_type}', '{run_datetime}', MAX(f.value:modified) FROM @LAKE{environment_suffix}.SIMPLESAT.ENDPOINT_S3{environment_suffix}_SIMPLESAT/{target_file_name} (file_format => LAKE{environment_suffix}.SIMPLESAT.JSON) t, lateral flatten( input => t.$1:\"0\" ) f;",
+    "sleep_interval":100,
+    "sleep_duration":1
+}

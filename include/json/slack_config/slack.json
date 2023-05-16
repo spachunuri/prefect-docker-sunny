@@ -1,0 +1,11 @@
+{
+    "default":{"DEV":"airflow-alerts-test",
+                "UAT":"airflow-alerts-test",
+                "PROD":"dataengineeringandplatform-airflow-alerts"},
+    "dqm_daily_snapshot":{"DEV":"airflow-alerts-test",
+                            "UAT":"dataengineeringandplatform-airflow-alerts",
+                            "PROD":"dataengineeringandplatform-airflow-alerts"},
+    "dqm_hourly_snapshot":{"DEV":"airflow-alerts-test",
+                            "UAT":"dataengineeringandplatform-airflow-alerts",
+                            "PROD":"dataengineeringandplatform-airflow-alerts"}
+}

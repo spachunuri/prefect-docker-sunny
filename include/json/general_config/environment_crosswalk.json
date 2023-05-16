@@ -1,0 +1,34 @@
+{
+    "dev":
+    {
+        "LAKE":"LAKE_DEV",
+        "ENVIRONMENT_SUFFIX":"_DEV",
+        "AWS_ACCESS_KEY_ID":"AKIA2UKWEAYMVAUIGPWQ",
+        "S3_STORAGE_INTEGRATION":"ENDPOINT_S3_DEV",
+        "S3_BUCKET":"endpoint-dataanalytics-development",
+        "SECRET_LOCATION":"endpointclosing/dataanalytics/airflow/development",
+        "SECRET_ARN":"arn:aws:secretsmanager:us-west-2:730861930009:secret:endpointclosing/dataanalytics/airflow/development-F2sfXc"
+    },
+    
+    "uat":
+    {
+        "LAKE":"LAKE_UAT",
+        "ENVIRONMENT_SUFFIX":"_UAT",
+        "AWS_ACCESS_KEY_ID":"AKIA2UKWEAYMV2EM7I6G",
+        "S3_STORAGE_INTEGRATION":"ENDPOINT_S3_INTEG",
+        "S3_BUCKET":"endpoint-dataanalytics-integration",
+        "SECRET_LOCATION":"endpointclosing/dataanalytics/airflow/integration",
+        "SECRET_ARN":"arn:aws:secretsmanager:us-west-2:730861930009:secret:endpointclosing/dataanalytics/airflow/integration-NqEvSz"
+    },
+
+    "prod":
+    {
+        "LAKE":"LAKE",
+        "ENVIRONMENT_SUFFIX":"",
+        "AWS_ACCESS_KEY_ID":"AKIA2UKWEAYMW55ONM67",
+        "S3_STORAGE_INTEGRATION":"ENDPOINT_S3_PROD",
+        "S3_BUCKET":"endpoint-dataanalytics-production",
+        "SECRET_LOCATION":"endpointclosing/dataanalytics/airflow/production",
+        "SECRET_ARN":"arn:aws:secretsmanager:us-west-2:730861930009:secret:endpointclosing/dataanalytics/airflow/production-QG7w3f"
+    }
+}
